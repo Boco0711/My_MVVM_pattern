@@ -29,8 +29,8 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeHold
     public void onBindViewHolder(@NonNull RecipeHolder holder, int position) {
         Recipe currentRecipe = recipes.get(position);
         holder.textViewTitle.setText(currentRecipe.getRecipeName());
-        holder.textViewDescription.setText(currentRecipe.getRecipeLong());
-        holder.textViewDifficulty.setText(currentRecipe.getRecipeDifficulty());
+        holder.textViewDescription.setText(String.valueOf(currentRecipe.getRecipeLong()));
+        holder.textViewDifficulty.setText(String.valueOf(currentRecipe.getRecipeDifficulty()));
     }
 
     @Override
