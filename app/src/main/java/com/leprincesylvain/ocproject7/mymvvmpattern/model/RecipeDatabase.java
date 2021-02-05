@@ -44,6 +44,7 @@ public abstract class RecipeDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
+            recipeDao.insert(new Recipe("Taboulet", 1, 25));
             return null;
         }
     }
