@@ -53,7 +53,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeHold
             textViewTitle = itemView.findViewById(R.id.text_view_title);
             textViewDescription = itemView.findViewById(R.id.text_view_description);
             textViewDifficulty = itemView.findViewById(R.id.text_view_difficulty);
-            // renew comment : it's the recipe holder
+            // renew comment
         }
     }
 }
